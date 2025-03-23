@@ -3,7 +3,7 @@ import pickle
 import math
 from flask import Flask ,request, jsonity,render_template
 
-app = Flask(_name_),template_folder="template",static_folder="staticfiles") ## assign flask = app
+app = Flask(_name_),template_folder=("template",static_folder="staticfiles") ## assign flask = app
 model = pickel.load(open('model.pkl','rb'))
 
 @app.route('/')  ##root folder
