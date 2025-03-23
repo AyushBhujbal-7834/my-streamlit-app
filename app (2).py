@@ -20,5 +20,5 @@ def predict():
     else:
         return render_template('index.html',prediction_text="Loan is approved").format(prediction)
     
-   if _name_ == "_main_":
+   if __name__ == "_main_":
        app.run(host="0.0.0.0",port=8080)
